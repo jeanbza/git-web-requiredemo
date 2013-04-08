@@ -1,3 +1,4 @@
+// AMD (Asynchronous Module Definition) wrapper for jQuery 1.8
 define([
     // Load the original jQuery source file
     '/requiredemo/library/jquery/1.8/jquery.min.js'

@@ -1,3 +1,4 @@
+// Example of simple plugin inside Require.js framework
 define(['jquery', 'bootstrap', 'jqueryui/widget'], function ($) {
     $.widget('testapp.myplugin', {                  // namespace.name
         options: {                                  // Widget options
