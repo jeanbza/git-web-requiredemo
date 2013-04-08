@@ -1,6 +1,6 @@
 require.config({
     baseUrl: '/require/',
-    urlArgs: "bust=" + (new Date()).getTime(),                      // Automatic versionining
+    urlArgs: "bust=" + (new Date()).getTime(),                      // Automatic versioning
     paths: {
         'jquery': '/require/library/jquery/jquery-1.9.1.min',       // Standard jquery
         'jquerynew': '/require/library/jquery/1.9/jquery.module',   // New version of jquery
