@@ -1,9 +1,9 @@
 // AMD (Asynchronous Module Definition) wrapper for jQuery 1.8
 define([
-    // Load the original jQuery source file
+    // Load the jQuery source file
     '/requiredemo/library/jquery/1.8/jquery.min.js'
     ], 
     function(){
         // Tell Require.js that this module returns a reference to jQuery
-        return $;//return the global scope object
+        return $; // Return the global scope object
     });
