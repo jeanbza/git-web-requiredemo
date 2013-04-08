@@ -2,7 +2,7 @@ require.config({
     baseUrl: '/requiredemo/',
     urlArgs: "bust=" + (new Date()).getTime(),                          // Automatic versioning
     paths: {
-        'jquery': '/requiredemo/library/jquery/jquery-1.9.1.min',         // Our 'standard' jquery
+        'jquery': '/requiredemo/library/jquery/jquery-1.9.1.min',       // Our 'standard' jquery
         'jqueryui': '/requiredemo/library/jqueryui/1.10.0/',
         'bootstrap': '/requiredemo/library/bootstrap/js/bootstrap.min'
     },
