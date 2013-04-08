@@ -1,12 +1,12 @@
 require.config({
-    baseUrl: '/require/',
+    baseUrl: '/requiredemo/',
     urlArgs: "bust=" + (new Date()).getTime(),                      // Automatic versioning
     paths: {
-        'jquery': '/require/library/jquery/jquery-1.9.1.min',       // Standard jquery
-        'jquerynew': '/require/library/jquery/1.9/jquery.module',   // New version of jquery
-        'jqueryold': '/require/library/jquery/1.8/jquery.module',   // Old version of jquery
-        'jqueryui': '/require/library/jqueryui/1.10.0/',
-        'bootstrap': '/require/library/bootstrap/js/bootstrap.min'
+        'jquery': '/requiredemo/library/jquery/jquery-1.9.1.min',       // Standard jquery
+        'jquerynew': '/requiredemo/library/jquery/1.9/jquery.module',   // New version of jquery
+        'jqueryold': '/requiredemo/library/jquery/1.8/jquery.module',   // Old version of jquery
+        'jqueryui': '/requiredemo/library/jqueryui/1.10.0/',
+        'bootstrap': '/requiredemo/library/bootstrap/js/bootstrap.min'
     },
     // Configure the dependencies and exports for older, traditional "browser globals" - 
     // scripts that do not use define() to declare the dependencies and set a module value.
