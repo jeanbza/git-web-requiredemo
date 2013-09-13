@@ -1,11 +1,12 @@
 require.config({
-    baseUrl: '/requiredemo/',
+    baseUrl: '/git-web-requiredemo/',
     urlArgs: "bust=" + (new Date()).getTime(),                          // Automatic versioning
     paths: {
-        'jquery': '/requiredemo/library/jquery/jquery-1.9.1.min',       // Our 'standard' jquery
-        'jqueryui': '/requiredemo/library/jqueryui/1.10.0/',
-        'bootstrap': '/requiredemo/library/bootstrap/js/bootstrap.min'
+        'jquery': 'library/jquery/jquery-1.9.1.min',       // Our 'standard' jquery
+        'jqueryui': 'library/jqueryui/1.10.0/',
+        'bootstrap': 'library/bootstrap/js/bootstrap.min'
     },
+    
     map: {
         'modules/jqueryoldmodule': {
             'jquery': 'library/jquery/1.8/jquery.module'                // When the module defines 'jquery', load the jquery 1.8 AMD wrapper
@@ -14,6 +15,7 @@ require.config({
             'jquery': 'library/jquery/1.9/jquery.module'                // When the module defines 'jquery', load the jquery 1.9 AMD wrapper
         }
     },
+
     // Configure the dependencies and exports for older, traditional "browser globals" - 
     // scripts that do not use define() to declare the dependencies and set a module value.
     shim: {  
